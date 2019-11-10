@@ -56,9 +56,12 @@ nav {
   border-radius: 41px;
 }
 
+.icon {
+  margin-left: 16px;
+}
+
 .banner {
   margin: 97px 0 0 87px;
-  position: relative;
   display: flex;
 }
 
@@ -68,6 +71,20 @@ nav {
   width: 1229px;
   height: 742px;
   background-size: cover;
+  position: relative;
+}
+
+.view {
+  float: right;
+  width: 188px;
+  height: 61px;
+  font-size: 23px;
+  font-weight: 600;
+  margin: 28px 54px 0px 0px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.35);
 }
 
 .banner h1 {
@@ -99,39 +116,30 @@ nav {
   bottom: 76px;
 }
 
-.icon {
-  margin-left: 16px;
+.bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 .list {
   padding: 0px 0px 0px 0px;
   display: flex;
-  margin: 32px 0 0 0;
+  margin: 45px 0 0 0;
   align-items: center;
-}
-
-.bottom {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-}
-
-.gradeimg {
-  height: 30px;
-  width: 30px;
-  margin: 6px 8px 0px 0px;
+  justify-content: center;
 }
 
 .list li {
   padding: 0px;
-  font-size: 28px;
+  font-size: 30px;
   text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
   letter-spacing: 2.19px;
   list-style: none;
-  margin: 0 58px 0 0;
+  margin: 0 20px 0 0;
+}
+
+.list .text-img {
+  margin: 0 10px 0 0;
 }
 
 .list li a {
@@ -139,30 +147,11 @@ nav {
   color: #ffffff;
 }
 
-.valueimg {
-  width: 30px;
-  height: 24px;
-  margin: 6px 8px 0px 0px;
-}
-
-.mncimg {
-  width: 24px;
-  height: 30px;
-  margin: 6px 8px 0px 0px;
-}
-
-.returnimg {
-  width: 26px;
-  height: 23.6px;
-  margin: 6px 8px 0px 0px;
-}
-
 .calculator {
   width: 421px;
   height: 746px;
   background-color: #171717;
   margin: 0px 0px 0px 94px;
-  justify-content: center;
 }
 
 .calculator h3 {
@@ -176,31 +165,56 @@ nav {
   color: #ffffff;
 }
 
-.view {
-  float: right;
-  width: 188px;
-  height: 61px;
-  font-size: 23px;
-  font-weight: 600;
-  margin: 28px 54px 0px 0px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.35);
-}
-
-.inv {
+.calculator .inv {
+  margin: 74px 24px 0 31px;
   display: flex;
-  position: absolute;
-  width: 179px;
-  height: 16px;
-  margin: 169px 0px 0px 31px;
+  flex-direction: column;
 }
 
-.inv h4 {
-  white-space: nowrap;
+.calculator .inv div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 0 0 48px 0;
+}
+
+.calculator p {
   opacity: 0.4;
-  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.68px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.calculator .amt {
+  background-color: #171717;
+  border: solid 2px #2f2f2f;
+  color: #ffffff;
+  height: 37px;
+  font-size: 16px;
+}
+
+.calculator input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.triangle {
+  margin: 70px 0 0 180px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 21px solid #b61b1c;
+}
+
+.extraordinary {
+  height: 27.3%;
+  width: 100%;
+  background-color: #b61b1c;
 }
 
 .form {
@@ -214,105 +228,6 @@ nav {
   padding: 0px;
 }
 
-/* 
-.slider{
-    width: 357px;
-    height: 2.8px;
-    margin: 0px 24.6px 0px 39.4px;
-    border-radius: 8.5px;
-  background-color: #2f2f2f;
-  box-shadow: inset;
-   -webkit-appearance: none; 
-  outline: none;
-}
-.slider ::-webkit-slider-runnable-track{
-    background-color: #000000;
-    height: 2.8px;
-    border-radius: 8.5px;
-    transition: .3s;
-}
-
-.slider ::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    background: red;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-
-} */
-/* .invslider{
-    display: flex;
-}*/
-/*input[type="range"] { 
-    margin: auto;
-    -webkit-appearance: none;
-    position: relative;
-    overflow: hidden;
-    height: 2.8px;
-    width: 357px;
-    cursor: pointer;
-    border-radius: 8.5px; /* iOS */
-
-/*::-webkit-slider-runnable-track {
-    background: #2f2f2f;
-}
-
-
- 
-::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 14px; /* 1 */
-/*height: 14px;
-    border-radius: 50%;
-    background: #000000;
-    box-shadow: -100vw 0 0 100vw red;
-    border: 2px solid #999; /* 1 */
-
-/*::-moz-range-track {
-    height: 40px;
-    background: #ddd;
-}
-
-::-moz-range-thumb {
-    background: #fff;
-    height: 40px;
-    width: 20px;
-    border: 3px solid #999;
-    border-radius: 0 !important;
-    box-shadow: -100vw 0 0 100vw dodgerblue;
-    box-sizing: border-box;
-}
-
-::-ms-fill-lower { 
-    background: dodgerblue;
-}
-
-::-ms-thumb { 
-    background: #fff;
-    border: 2px solid #999;
-    height: 40px;
-    width: 20px;
-    box-sizing: border-box;
-}
-
-::-ms-ticks-after { 
-    display: none; 
-}
-
-::-ms-ticks-before { 
-    display: none; 
-}
-
-::-ms-track { 
-    background: #ddd;
-    color: transparent;
-    height: 40px;
-    border: none;
-}
-
-::-ms-tooltip { 
-    display: none;
-} */
 .aboutproperty {
   display: flex;
   width: 1920px;
@@ -330,63 +245,39 @@ nav {
   font-size: 24px;
   font-weight: 600;
   list-style: none;
-}
-
-.over {
-  margin: 135px 0px 0px 128px;
+  margin: 51px 0px 0px 128px;
   opacity: 0.33;
-}
-
-.over a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
-}
-
-.about {
-  margin-top: 50px;
-  margin-left: 128px;
-}
-
-.about a {
-  opacity: 0.93;
-  font-size: 31px;
-  font-weight: bold;
-  color: #1f1f1f;
 }
 
 .uno li a {
   color: #000000;
   text-decoration: none;
-}
-
-.tenant {
-  margin-top: 50px;
-  margin-left: 128px;
-}
-
-.tenant a {
-  opacity: 0.33;
-  font-size: 24px;
   font-weight: 600;
   text-align: center;
 }
 
-.model {
-  margin-top: 51px;
-  margin-left: 128px;
-}
-
-.model a {
-  opacity: 0.33;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
+.uno .over {
+  margin-top: 135px;
 }
 
 .uno .about {
-  list-style-type: square;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  font-size: 31px;
+}
+
+.uno .about div {
+  margin: 70px 0 0 79px;
+  width: 32px;
+  height: 1px;
+  border: solid 4px #c91718;
+  background-color: #c91718;
+}
+
+.uno .about p {
+  margin: 50px 0 0 17px;
 }
 
 .des {
