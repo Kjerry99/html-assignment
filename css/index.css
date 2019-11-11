@@ -410,6 +410,34 @@ nav {
   background-color: #2f2f2f;
   height: 450px;
   width: 1920px;
+  background-image: url("/imgs/mapimg.png");
+}
+
+.pin {
+  position: absolute;
+  top: 234px;
+  left: 881px;
+}
+
+.map .outer {
+  border: solid 1px rgba(201, 23, 24, 0.1);
+  background-color: rgba(255, 0, 0, 0.07);
+  width: 148px;
+  height: 152px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 262.9px;
+  left: 829px;
+}
+
+.map .inner {
+  width: 25.9px;
+  height: 26.9px;
+  background-color: #cc5d5e;
+  border-radius: 50%;
 }
 
 .map .location {
@@ -477,4 +505,35 @@ nav {
   text-align: center;
   color: #ffffff;
   margin: 41px 131px 37px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* slider css starts here */
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2.8px;
+  cursor: pointer;
+  background: linear-gradient(to right, #000000, 20%, #c91718);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  background: #c91718;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
 }
