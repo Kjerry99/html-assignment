@@ -178,7 +178,7 @@ nav {
   margin: 0 0 48px 0;
 }
 
-.calculator p {
+.calculator .inves {
   opacity: 0.4;
   font-size: 14px;
   font-weight: bold;
@@ -231,7 +231,7 @@ nav {
 .aboutproperty {
   display: flex;
   width: 1920px;
-  height: 2869px;
+  height: 1121px;
   background-color: #ffffff;
 }
 
@@ -364,4 +364,117 @@ nav {
   font-weight: 500;
   text-align: center;
   color: #ffffff;
+}
+
+.ele {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.pf {
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.56px;
+  color: #ffffff;
+  margin: 0%;
+}
+
+.high {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  margin: 30px 0px 0 60px;
+}
+
+.pt {
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin: 5px;
+}
+
+.map {
+  position: relative;
+  background-color: #2f2f2f;
+  height: 450px;
+  width: 1920px;
+}
+
+.map .location {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.1);
+  height: 152px;
+  width: 325px;
+  left: 742px;
+  top: 70px;
+}
+
+.location .title {
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1f1f1f;
+  margin: 18px 0px 5px 22px;
+}
+
+.content {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: normal;
+  color: #4e4e4e;
+  margin: 0px 56px 25px 22px;
+}
+
+.foot {
+  width: 1920px;
+  height: 148px;
+  background-color: #ffffff;
+}
+
+.foot .conts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.foot .conts .want {
+  font-size: 32.3px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  margin: 59px 0px 50px 88px;
+}
+
+.enq {
+  width: 280px;
+  height: 70px;
+  border: solid 1px #000000;
+  background-color: #121212;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 3.29px;
+  text-align: center;
+  color: #ffffff;
+  margin: 41px 131px 37px 0px;
 }
